@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\Signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>SignUp</title>
+    <script src="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\signvalid.js"></script>
+    <script>
+        function main(){
+            var status =true;
+        
+        var username =document.getElementById("username").value
+        var useremail =document.getElementById("useremail").value
+        var userphone =document.getElementById("userphone").value
+        var cmbcity =document.getElementById("cmbcity").value
+        var usergender= document.getElementsByName("usergender")
+       
+        var useradd =document.getElementById("useradd").value
+        var userlink =document.getElementById("userlink").value
+        var usercourse =document.getElementById("usercourse").value
+        var userins =document.getElementById("userins").value
+        var userscore =document.getElementById("userscore").value
+        var userpyear =document.getElementById("userpyear").value
+        var userdesi =document.getElementById("userdesi").value
+        var usercname =document.getElementById("usercname").value
+        var userexp =document.getElementById("userexp").value
+        var chksure= document.getElementsByName("chksure")
+        
+        if(checkEmpty(username)==true){ 
+            document.getElementById("msgname").innerText="Name Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(useremail)==true){ 
+            document.getElementById("msgemail").innerText="Email Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userphone)==true){ 
+            document.getElementById("msgphone").innerText="Phone Required !"
+            status=false;
+            
+        }
+        if(checkCombo(cmbcity)==true){ 
+            document.getElementById("msgcity").innerText="City Required !"
+            status=false;
+            
+        }
+        if(chk_rdCheck(usergender)==true){ 
+            document.getElementById("msgrdgen").innerText="Gender Required !"
+            status=false;
+            
+        }
+        
+        if(checkEmpty(useradd)==true){ 
+            
+            document.getElementById("msgadd").innerText="Address Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userlink)==true){ 
+            document.getElementById("msglink").innerText="Link Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(usercourse)==true){ 
+            document.getElementById("msgcourse").innerText="Course Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userins)==true){ 
+            document.getElementById("msgins").innerText="Institute name Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userscore)==true){ 
+            document.getElementById("msgscore").innerText="Grade/Score Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userpyear)==true){ 
+            document.getElementById("msgpyear").innerText="Passing Year Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userdesi)==true){ 
+            document.getElementById("msgdesi").innerText="Designation Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(usercname)==true){ 
+            document.getElementById("msgcname").innerText="Company Name Required !"
+            status=false;
+            
+        }
+        if(checkEmpty(userexp)==true){ 
+            document.getElementById("msgexp").innerText="Experience Required !"
+            status=false;
+            
+        }
+        if(chk_rdCheck(chksure)==true){ 
+            document.getElementById("msgchk").innerText="Confirm checkbox !"
+            status=false;
+            
+        }
+        return status;
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\index.html">Assignment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\blog.html">Blog</a>
+            </li>
+            
+           
+          </ul>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active" >
+                <a class="nav-link" href="C:\Users\hp\OneDrive\Desktop\MakosWeb.com\signup.html">Sign Up <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In</a>
+              </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="content">
+                    <h1 style="color: crimson;">Registration Form</h1> 
+                    <form method="POST" onsubmit="return main()" onload="">
+                        <div class="cd">
+                            <div class="cd1">
+                            <h2>Personal Details</h2>
+                            </div>
+                            <div class="cd2">
+                                
+                                <div>
+                                    Name <br><input type="text" id="username" class="brd">
+                                    <br><small id="msgname" style="color:red" ></small>
+                                </div>
+                                <div>
+                                    Email <br><input type="email" id="useremail" class="brd">
+                                   <br> <small id="msgemail" style="color:red" ></small>
+                                </div>
+                                <div>
+                                    Phone Number <br><input type="text" id="userphone" class="brd">
+                                   <br> <small id="msgphone" style="color:red" ></small>
+                                </div>
+                                <div>
+                                    Whatsapp Number (if different)<br><input type="text" id="userphone" class="brd">
+                                </div>
+                                <div style="margin-top: 10px;">
+                                    <label for="usercity">city</label>
+                                    <select id="cmbcity" name="cmbcity" onchange="addCity(this.value)" ><!-- multiple="multiple" -->
+                                    <option value="default">Select City</option>
+                                    <option value="lko">LUCKNOW</option>
+                                    <option value="vns">VARANASI</option>
+                                    <option value="knp">KANPUR</option>
+                                  <option value="gkp">GORAKHPUR</option>
+                                  <option value="others">OTHERS</option>
+                                  
+                                </select>
+                                <br><small id="msgcity" style="color:red" ></small>
+                                </div>
+                                <div >
+                                    Male<input type="radio"  id="rdmale" name="usergender" value="student">
+                                    <span style="padding-left: 40px;"> Female<input type="radio"  id="rdfemale" name="usergender" value="working"></span>
+                                    <br><small id="msgrdgen" style="color:red" ></small>
+                                </div>
+                                
+                                <div>
+                                    <span style="margin-top: 40px;"> Address <br><input type="text" id="useradd" class="brd"></span>
+                                    <br><small id="msgadd" style="color:red" ></small>
+                                    
+                                </div>
+                                <div>
+                                    Website or Portfolio link <br><input type="url" id="userlink" class="brd">
+                                    <br><small id="msglink" style="color:red" ></small>
+                                </div>
+                                
+                            </div>
+                            <div class="cd1">
+                                <h2>Educational Details</h2>
+                                </div>
+                                <div class="cd2">
+                                    <div>
+                                        Course/Degree <br><input type="text" id="usercourse" class="brd">
+                                        <br><small id="msgcourse" style="color:red" ></small>
+                                    </div>
+                                    <div>
+                                       Name of Institute <br><input type="text" id="userins" class="brd">
+                                        <br><small id="msgins" style="color:red" ></small>
+                                    </div>
+                                    <div>
+                                        Grade/Score <br><input type="text" id="userscore" class="brd">
+                                        <br><small id="msgscore" style="color:red" ></small>
+                                    </div>
+                                    <div>
+                                        Passing Year <br><input type="number" id="userpyear" min="1550" class="brd">
+                                        <br><small id="msgpyear" style="color:red" ></small>
+                                    </div>
+                                </div>
+                                <div class="cd1">
+                                    <h2>Work Experience</h2>
+                                    </div>
+                                    <div class="cd2">
+                                        <div>
+                                            Designation <br><input type="text" id="userdesi" class="brd">
+                                            <br><small id="msgdesi" style="color:red" ></small>
+                                        </div>
+                                        <div>
+                                           Company Name <br><input type="text" id="usercname" class="brd">
+                                            <br><small id="msgcname" style="color:red" ></small>
+                                        </div>
+                                        <div>
+                                            Experience (in year) <br><input type="number" id="userexp" min="0" class="brd">
+                                            <br><small id="msgexp" style="color:red" ></small>
+                                        </div>
+                                        <div>
+                                            <div class="container">
+                                            Documents<br><span style="padding-left: 100px ;"><input type="file" id="userdoc" ></span>
+                                            <br><small id="msgdoc" style="color:red" ></small>
+                                        </div>
+                                        </div>
+                                        <div >
+                                            Are you sure to submit : 
+                                            <input type="checkbox" name="chksure" >
+                                            <br><small id="msgchk" style="color:red" ></small>
+                                        </div>
+                                        <div>
+                                            <button type="submit" class="btn btn-primary" style="width: 180px; margin-top: 10px; margin-bottom: 10px;" >Submit</button>   
+                                        </div>
+                                    </div>
+
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

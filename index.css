@@ -1,0 +1,22 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d29yayUyMGRlc2t8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+
+    
+}
+#content{
+    text-align: center;
+    padding-right: 25%;
+    padding-top: 25%;
+    font-family: 'Chango', cursive;
+}
+
+hr{
+    width: 400px;
+    border-top: 1px , solid, #f8f8f8e5;
+}
+.brd{
+    border-radius: 15px;
+}
